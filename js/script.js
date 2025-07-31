@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const togglePasswordButton = document.getElementById("togglePassword");
   const eyeIcon = document.getElementById("eye-icon");
   const eyeSlashIcon = document.getElementById("eye-slash-icon");
+  const emailInput = document.getElementById("email-address");
 
   const rules = {
     length: document.getElementById("length-rule"),
@@ -68,6 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     eyeIcon.classList.toggle("hidden");
     eyeSlashIcon.classList.toggle("hidden");
+  });
+
+  emailInput.addEventListener("invalid", function () {
+    if (this.validity.valueMissing) {
+      this.setCustomValidity("Please enter your email address to continue");
+    } else if (this.validity.typeMismatch) {
+      this.setCustomValidity("Please enter a valid email address");
+    }
+  });
+
+  emailInput.addEventListener("input", function () {
+    this.setCustomValidity("");
   });
 
   initializeIcons();
