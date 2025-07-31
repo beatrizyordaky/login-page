@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Account</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="header-image"></div>
+
+      <div class="form-card space-y-8">
+        <div class="form-header">
+          <h2>Create your account</h2>
+          <p class="form-subtext">
+            Or
+            <a href="#">sign in</a>
+            to your account
+          </p>
+        </div>
+
+        <form class="signup-form space-y-6" action="#" method="POST">
+          <input type="hidden" name="remember" value="true" />
+          <div>
+            <div class="form-section">
+              <label for="email-address" class="input-label">Email</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="form-input custom-focus"
+              />
+            </div>
+
+            <div class="password-container">
+              <label for="password" class="input-label">Password</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                class="form-input custom-focus"
+              />
+              <button type="button" id="togglePassword" class="password-toggle">
+                <svg
+                  id="eye-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+                <svg
+                  id="eye-slash-icon"
+                  class="hidden"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.542-7 1.274-4.057 5.064-7 9.542-7 .847 0 1.673.126 2.463.362m3.694 11.257a10.017 10.017 0 003.38-3.618c-1.274-4.057-5.064-7-9.542-7a10.007 10.007 0 00-1.82.182M1.5 1.5l21 21"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="password-validation-rules"
+            class="password-validation space-y-2"
+          >
+            <div id="length-rule" class="validation-rule">
+              <span class="rule-icon"></span>
+              <span>At least 8 characters</span>
+            </div>
+            <div id="uppercase-rule" class="validation-rule">
+              <span class="rule-icon"></span>
+              <span>One uppercase letter</span>
+            </div>
+            <div id="lowercase-rule" class="validation-rule">
+              <span class="rule-icon"></span>
+              <span>One lowercase letter</span>
+            </div>
+            <div id="number-rule" class="validation-rule">
+              <span class="rule-icon"></span>
+              <span>One number</span>
+            </div>
+            <div id="special-rule" class="validation-rule">
+              <span class="rule-icon"></span>
+              <span>One special character (!@#$%^&*)</span>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn-primary">Create Account</button>
+          </div>
+          <div>
+            <button type="button" class="btn-secondary">
+              <img
+                src="https://www.svgrepo.com/show/475656/google-color.svg"
+                loading="lazy"
+                alt="google logo"
+              />
+              <span>Sign up with Google</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
