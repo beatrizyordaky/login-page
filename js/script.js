@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
             </svg>`;
 
   const validationChecks = {
-    length: (pw) => pw.length >= 8,
-    uppercase: (pw) => /[A-Z]/.test(pw),
-    lowercase: (pw) => /[a-z]/.test(pw),
-    number: (pw) => /[0-9]/.test(pw),
-    special: (pw) => /[!@#$%^&*]/.test(pw),
+    length: (password) => password.length >= 8,
+    uppercase: (password) => /[A-Z]/.test(password),
+    lowercase: (password) => /[a-z]/.test(password),
+    number: (password) => /[0-9]/.test(password),
+    special: (password) => /[!@#$%^&*]/.test(password),
   };
 
   function validatePassword() {
