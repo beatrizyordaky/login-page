@@ -1,7 +1,7 @@
 # Login Page
 
 A responsive user registration page with real-time password validation. Uses HTML, CSS and JavaScript.
-
+<img width="1490" height="815" alt="Screenshot 2025-07-31 at 16 37 09" src="https://github.com/user-attachments/assets/5938a13e-aafd-42b4-8816-e143ca20ab65" />
 ## Features
 
 - **Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices
