@@ -41,7 +41,7 @@ login-page/
    cd login-page
    ```
 
-2. **Run the project**:
+2. **Run the project (necessary Python3)**:
    ```bash
    python -m http.server
    ```
