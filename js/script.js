@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const ruleName in rules) {
       const ruleElement = rules[ruleName];
       const iconSpan = ruleElement.querySelector(".rule-icon");
-      const textSpan = ruleElement.querySelector("span:last-child");
 
       const isValid = validationChecks[ruleName](password);
 
